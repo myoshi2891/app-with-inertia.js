@@ -22,6 +22,12 @@ export default defineConfig({
                     includeAbsolute: false,
                 },
             },
+            resolve: {
+                alias: {
+                    "@": path.resolve(__dirname, "./resources/js"),
+                },
+                extensions: [".vue", ".js"],
+            },
         }),
     ],
 });
